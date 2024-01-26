@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App GN TK</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d575fe1d69.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="popup_form">
+      <div class="popup_content">
+        <i class="fa-solid fa-xmark close"></i>
+        <div class="image">
+          <input type="file" hidden accept="image/*, .pdf" multiple />
+          <img src="imgs/user.jpg" alt="image user" />
+          <i class="fa-solid fa-arrows-rotate change_img"></i>
+        </div>
+        <div class="name">
+          <label for="">Nom:</label>
+          <input type="text" placeholder="Enter name" required />
+        </div>
+        <div class="prenom">
+          <label for="">Prenom:</label>
+          <input type="text" placeholder="Enter prenom" required />
+        </div>
+        <div class="age">
+          <label for="">Age:</label>
+          <input type="number" placeholder="Enter number" required />
+        </div>
+        <div class="number">
+          <label for="">Number Officer:</label>
+          <input type="number" placeholder="Enter number Officer" required />
+        </div>
+        <div class="lieux_travail">
+          <label for="">Lieux Du Travail:</label>
+          <input type="text" placeholder="Enter a place" required />
+        </div>
+        <button class="add_officer">Add Officer</button>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <header>
+        <input class="search" type="search" placeholder="Search Officer" />
+        <button class="show_form">Add</button>
+        <button class="clear">Clear All</button>
+      </header>
+      <ul class="content"></ul>
+      <footer>By G.N CopyRight<b>&copy;</b> <span class="date"></span></footer>
+    </div>
+  </body>
+</html>
